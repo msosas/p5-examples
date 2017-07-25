@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	background-color: #232323;
+}
+
+.container { 
+	width: 600px;	
+}
+
+.square {
+	width: 30%;
+	height: 30%;
+	float: left;
+	background: white;
+	margin: 1.66%; /* para que entren 3: 600px / 3 = 200 px. El 30% son 180px, entonces me falta 20px (10 de cada lado). Eso es 1,666% de cada lado de margin;*/
+	padding-bottom:30%; /*Hace toda la magia para que el cuadrado aparezca sin contenido */
+	border-radius: 10%;
+}
+
+.selected {
+	background-color: orange;
+}
