@@ -1,3 +1,59 @@
 * {
 	box-sizing: border-box;
 }
+
+.countainer {
+	width: 400px;
+}
+
+.cover-page {
+	width: 80%;
+	margin: auto;
+}
+
+.cover {
+	width: 95%;
+	margin: 3%;
+	border: 1px solid grey;
+	margin: 10%;
+
+}
+
+.info {
+	color: black;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+img.book {
+	width: 50%;
+	height: 150px;
+}
+
+img.disk {
+	width: auto;
+	height: 150px;
+}
+
+.photo {
+	text-align: center;
+	padding-top: 5%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.product-description {
+	margin: 5%;
+}
+
+.nav-item.active {
+	background-color: rgb(221, 221, 221);
+}
+
+
+.new-product {
+	width: 50%;
+	margin: auto;
+}
