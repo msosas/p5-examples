@@ -1,0 +1,22 @@
+.empire {
+	background-color: red;
+}
+
+#empire  {
+	color: red;
+	background-color: black;
+}
+
+#rebel {
+	background-color: #ffa500;
+	color: rgb(255,255,255);
+}
+
+#darth {
+	color: yellow;
+}
+
+#luke {
+	font-family: sans-serif;
+	color: #ffa5dd;
+}

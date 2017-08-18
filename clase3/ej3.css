@@ -1,0 +1,17 @@
+body {
+	background-color: #F4EBBE;
+}
+
+.container {
+	width: 600px;
+	background-color: #CACC90;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+#formulario {
+	text-align: center;
+}
