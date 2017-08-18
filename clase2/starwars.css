@@ -1,0 +1,20 @@
+.empire-red {
+	background-color: red;
+}
+
+.rebel-blue {
+	background-color: blue;
+}
+
+#darth-vader {
+	font-size: 30px;
+}
+
+#luke {
+	font-style: italic;
+}
+
+.soldier {
+	border: 2px dotted black;
+	letter-spacing: 2px;
+}
