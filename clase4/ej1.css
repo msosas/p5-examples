@@ -1,0 +1,36 @@
+.resaltadas {
+	font-weight: bold;
+	color: #F29D00;
+}
+
+span.resaltadas {
+	font-size: 20px;
+}
+
+p.resaltadas {
+	color: #ECD7B0;
+}
+
+.botones {
+
+}
+
+#btn-hover:hover{
+	color: red;
+	font-weight: bold;
+}
+
+#btn-click:active {
+	color: #FFFAF2;
+}
+
+#btn-focus:focus {
+	border: 3px solid #5E6572;
+}
+
+button {
+    background-color: darkgray;
+    border: 2px black;
+    border-style: double;
+    border-radius: 40px;
+}
