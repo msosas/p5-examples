@@ -1,0 +1,25 @@
+#gallery img {
+	width: 45%;
+	margin: 1.4%;
+	block-size: 180px;
+}
+
+h1 {
+	color: white;
+	font-family: 'Open Sans Condensed';
+}
+#gallery {
+	border: 1px solid white;
+	margin: auto;
+	width: 80%;
+}
+
+footer {
+	font-family: 'Open Sans Condensed';
+	color: white;
+	height: 60px;
+	width: 100%;
+	background-color: #BD632F;
+	position: fixed;
+	bottom: 0;
+}

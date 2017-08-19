@@ -1,7 +1,12 @@
-/*COLORS --> #EEF1EF - #A9B4C2 - #5E6572 - #7D98A1 - #1C2321*/
+/*COLORS --> #D8C99B - #273E47 - #A4243B - #D8973C - #BD632F*/
+
+* { 
+	box-sizing: border-box; 
+} 
+
 
 body {
-	background-color: #EEF1EF;
+	background-color: #D8C99B;
 }
 
 h1 {
@@ -9,7 +14,7 @@ h1 {
 }
 
 .container {
-	background-color: #A9B4C2;
+	background-color: #273E47;
 	width: 800px;
 	margin: auto;
 	text-align: center;
