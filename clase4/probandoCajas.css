@@ -1,0 +1,10 @@
+div {
+	border: 2px solid red;
+	border-left: 5px solid blue;
+	margin: 20px;
+}
+
+#small {
+	width: 33%;
+	padding: 40px;
+}
