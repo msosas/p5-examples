@@ -1,0 +1,19 @@
+ .col-sm-6 {
+ 	background-color: orange;
+ 	border: 2px solid black;
+ }
+
+ .col-sm-2 {
+ 	background-color: grey;
+ 	border: 2px solid black;
+ }
+
+  .col-xs-6 {
+ 	background-color: orange;
+ 	border: 2px solid black;
+ }
+
+ .col-xs-2 {
+ 	background-color: grey;
+ 	border: 2px solid black;
+ }
