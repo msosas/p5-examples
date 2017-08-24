@@ -1,0 +1,58 @@
+h2 {
+	color: #EEEEEE;
+}
+
+li {
+	color: #114800;
+}
+
+#bordeado {
+	border: 3px solid red;
+}
+
+.aloha {
+	background-color: #BFAB25;
+}
+
+input {
+	border: 2px dashed lime;
+}
+
+div p {
+	font-size: 300%;
+}
+
+h1:hover {
+	color: red;
+}
+
+input[type="text"] {
+	background-color: yellow;
+}
+
+a:visited {
+	color: green;
+}
+div:nth-of-type(3) p {
+	background-color: blue;
+}
+
+div:nth-of-type(3) p:nth-of-type(2) {
+	border: 4px solid orange;
+}
+
+input[type="checkbox"]:checked {
+	margin-left: 60px;
+}
+
+label {
+	text-transform: uppercase;
+}
+
+body {
+	background-color: #326273;
+}
+
+#ultimo::first-letter{
+	font-size: 300px;
+}

@@ -1,7 +1,7 @@
 #gallery img {
 	width: 45%;
 	margin: 1.4%;
-	block-size: 180px;
+	height: 180px;
 }
 
 h1 {

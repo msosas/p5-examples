@@ -1,0 +1,28 @@
+#fila1 {
+	background-color: #DE541E;
+}
+
+#col1 {
+	background-color: #878472;
+	padding: 40px;
+}
+
+#col2 {
+	background-color: #494331;
+	padding: 40px;
+}
+
+#col3 {
+	background-color: #D6D6B1;
+	padding: 40px;
+}
+
+#col4 {
+	background-color: #3F3F37;
+	padding: 40px;
+}
+
+.col {
+	float: left;
+	width: 25%;
+}
