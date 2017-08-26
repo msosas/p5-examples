@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #564E58;
+}
+
+h1 {
+	text-align: center;
+}
+
+.container {
+	background-color: #E1E6E1;
+}
+
+div[class^="col-"] {
+	border: 2px solid black;
+	height: 200px;
+	
+}	
+
+#myName {
+	font-weight: bold;
+	font-size: 40px;
+	color: #904E55;
+}
+
+.shaking-div {
+	width: 80%
+	height: 80%;
+	background-color: #FF7733;
+}
