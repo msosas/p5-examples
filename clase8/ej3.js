@@ -38,7 +38,7 @@ if (num4 > max) {
 	max = num4;
 }
 if (num5 > max) {
-	console.log("sapo");
+
 	max = num5;
 }
 
