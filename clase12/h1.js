@@ -1,3 +1,5 @@
+//change all h1 content of certain page
+
 function changeH1(text) {
 	var elements = document.querySelectorAll("h1");
 
