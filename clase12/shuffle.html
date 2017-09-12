@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shuffle</title>
+	<link rel="stylesheet" type="text/css" href="../basic-styles.css">
+</head>
+<body>
+<div class="container">
+	<div id="source" style="background-color: #F7B300">
+		A JavaScript file contains code that allows a user to interact with a browser or a web-based application. In some cases, the user may be presented with Windows controls to fill out or retrieve values from them. As an application developer, there are two types of values you will deal with. Primitive types are those created from simple types. We will study them when we get to variables. The other types of values are referred to as class types. We will explore them more when we get to object-oriented programming.
+
+		JavaScript uses the concept of class to identify or manage the many of the values used in an application. Consider an object like a house. It has such characteristics as its type (single family, town house, condominium, etc), the number of bedrooms, the number of bathrooms, etc. These characteristics are used to describe a house to somebody who wants to buy it. To get such an object, you must first define the criteria that describe it.	
+	</div>
+	<div id="destination" style="background-color: #B8170A"></div>
+	<div id="swap1">Soy SWAP 1</div>
+	<div id="swap2">Soy SWAP 2</div>
+
+	<script type="text/javascript">
+		function Shuffle(){
+			var text = document.getElementById("source").textContent;
+			document.getElementById("source").textContent = "";
+			document.getElementById("destination").textContent = text;	
+		}
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/*COLORS --> #EAE0CC - #96897B - #E5E5E5 - #B9A44C - #FA7921*/
+
+* { 
+	box-sizing: border-box; 
+	color: white;
+} 
+
+
+body {
+	background-color: #E5E5E5;
+}	
+
+h1 {
+	text-align: center;
+	color: #EAE0CC;
+}
+
+.container {
+	background-color: #B9A44C;
+	width: 800px;
+	margin: auto;
+	text-align: center;
+	box-shadow: 10px 10px 5px  #aaaaaa;
+}
+
+button {
+	background-color: #FA7921;
+}
+
+.grey-bkg {
+	background-color: grey;
+}
+
+.red-bkg {
+	background-color: #AA3939;
+}
