@@ -1,0 +1,13 @@
+p {
+	border: 2px solid orange;
+}
+
+.row {
+	height: 100px;
+	width: 90%;
+}
+
+#ej1 {
+	background-color: #805603;
+	height: 100%;
+}
