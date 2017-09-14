@@ -3,13 +3,31 @@
 <head>
 	<title>DOM</title>
 	<link rel="stylesheet" type="text/css" href="../basic-styles.css">
+	,<link rel="stylesheet" type="text/css" href="intro.css">
 </head>
 <body>
 	<div class="container">
-		<h1>DOM</h1>
+		
+		<h1 id="titulo-dom">DOM</h1>
 		<div id="dom-img">
 			<img src="https://www.kirupa.com/html5/images/DOM_js_72.png">
 		</div>
 	</div>
+	<script type="text/javascript">
+		function changeBackground() {
+			var h1 = document.querySelector("#titulo-dom");
+			h1.style.backgroundColor = "red";
+		}
+
+		function biggerFont() {
+			var h1 = document.querySelector("#titulo-dom");
+			h1.classList.add("big-font");
+		}
+		function toggleFont() {
+			var h1 = document.querySelector("#titulo-dom");
+			h1.classList.toggle("big-font");
+		}
+
+	</script>
 </body>
 </html>
