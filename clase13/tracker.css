@@ -1,0 +1,11 @@
+* {
+	cursor: none;
+}
+
+#bob {
+	position: fixed;
+}
+
+body {
+	height: 100vh;
+}

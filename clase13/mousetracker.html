@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eventos en JS!</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../basic-styles.css">
+	<link rel="stylesheet" type="text/css" href="intro.css">
+	<link rel="stylesheet" type="text/css" href="tracker.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">EVENTOS</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Page 1</a></li>
+				<li><a href="#">Page 2</a></li>
+				<li><a href="#">Page 3</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<img id="bob" src="https://media.giphy.com/media/MtQxKzhytFsmQ/giphy.gif">
+	</div>
+	<script type="text/javascript">
+		var body = document.querySelector("body");
+		body.addEventListener("mousemove", function(event) {
+			var image = document.getElementById("bob");
+
+			image.style.top = event.clientY + "px";
+			
+			image.style.left = event.clientX + "px";
+		});
+	</script>
+</body>
+</html>
