@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eventos en JS!</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../basic-styles.css">
+	<link rel="stylesheet" type="text/css" href="intro.css">
+	
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">EVENTOS</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<form id="form1" class="navbar-form navbar-left" >
+					<div class="form-group">
+						<input id="input-color" type="text" class="form-control" placeholder="Submit a color" name="color" onkeypress="changeColor({ event })">
+					</div>
+					
+				</form>
+				
+			</ul>
+		</div>
+	</nav>
+	<script type="text/javascript">
+		document.getElementById("form1").addEventListener("submit", function(event) {
+			event.preventDefault();
+			//return false;
+		});
+
+
+		
+		function changeColor(event) {
+			var input = document.getElementById("input-color");
+
+			var body = document.querySelector("body");
+			body.style.backgroundColor = input.value;
+			console.log(input.value);
+			console.log(event);
+			
+			return false;	
+		}
+		
+	</script>
+</body>
+</html>

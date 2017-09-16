@@ -30,7 +30,7 @@
 		<div class="row">
 			<div id="ej1" class="col-md-6"></div>
 			<div id="button-cnt" class="col-md-6">
-				<button id="change-color" class="btn">COLOR</button>
+				<button id="change-color" class="btn" onclick="changeColor()">COLOR</button>
 				<button id="show-text" class="btn">TEXT</button>
 				<button id="beep" class="btn btn-danger">BEEP</button>
 			</div>
@@ -61,13 +61,17 @@
 			}
 		}
 
-		function Beep() {
+		/*function Beep() {
 			var body = document.querySelector("body");
 			body.insertAdjacentHTML("beforeend", "<span>BEEP!!</span>");
-		}
+		}*/
 
-		document.getElementById("change-color").addEventListener("click", changeColor);
+		//document.getElementById("change-color").addEventListener("click", changeColor);
 		document.getElementById("beep").addEventListener("click", Beep);
+
+
+
+
 		document.getElementById("show-text").addEventListener("mouseout", showText); 
 		//mouseover, mouseout, mousemove
 	</script>
