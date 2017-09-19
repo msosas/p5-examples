@@ -1,0 +1,28 @@
+.container {
+	text-align: center;
+	border: 2px solid #d63838;
+	padding-bottom: 100px;
+	width: 900px;
+}
+
+h1 {
+	text-align: center;
+}
+
+i {
+	cursor: pointer;
+}
+
+.products {
+	float: left;
+	width: 30%;
+	margin: 10px;
+	border: 2px solid black;
+	border-radius: 10%;
+	background-color: rgba(18,85,130,0.7);
+}
+
+.img-inside {
+	padding-top: 50%;
+	background-color: grey;
+}

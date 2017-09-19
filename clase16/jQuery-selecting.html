@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JQuery</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/@deveodk/vue-animate/dist/@deveodk/vue-animate.css"></link>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="https://unpkg.com/vue"></script>
+	<script src="http://momentjs.com/downloads/moment.js"></script>
+	<script type="text/javascript" src="ej1.js"></script>
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper container verdeOscuro">
+			<a href="/" class="brand-logo"><img src="" class="logoImg" alt="LOGO"></a>
+			<ul class="right hide-on-med-and-down">
+				<span id='profile'>
+					<template v-if="nombre">
+						<li class='usuario'>
+							<li><a href="/alumno/dashboard">Dashboard</a></li>
+						</li>
+						<li class='usuario'>
+							<a href="/alumno/perfil"><i class="fa fa-user"></i><span>Bienvenido: {{apellido}}, {{nombre}}</span></a>
+							<a href="/logout"><i class="fa fa-sign-out"></i></a>
+						</li>
+					</template>
+				</span>
+				<script type='text/javascript'>
+					var data ={}
+					var vm = new Vue({
+						el: '#profile',
+						data: data
+					});
+
+				</script>
+			</ul>
+		</div>
+	</nav>
+	<div class='container'>
+		<h4>Bienvenido</h4>
+		<p>La educación online puede ser efectiva, elegí la mejor forma de aprender para vos!</p>
+		<div class='row aniback'>
+			<div class='col s4 center-align'>
+				<a href='/login'>
+					<div class='stat'>
+						<div class='row'>
+							<img src='' />
+						</div>
+						<div class='row'>
+							<h5>Login</h5>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class='col s4 center-align'>
+				<a href='#'>
+					<div class='stat'>
+						<div class='row'>
+							<img src='' />
+						</div>
+						<div class='row'>
+							<h5>Contacto</h5>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class='col s4 center-align'>
+				<a href='#'>
+					<div class='stat'>
+						<div class='row'>
+							<img src='' />
+						</div>
+						<div class='row'>
+							<h5>Más Info</h5>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://unpkg.com/notie"></script>
+	<footer class="page-footer verdeClaro" id='footer'>
+		<div class="footer-copyright">
+			<div class="container"><img src="" class="logoImg" alt="LOGO">© 2016 Plataforma 5<span>Made with <i class="fa fa-heart pulse"></i> by <a href="https://devs.plataforma5.la" target="_blank"><strong> Plataforma { 5 } </strong></a>
+			</span>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
