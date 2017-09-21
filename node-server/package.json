@@ -1,0 +1,14 @@
+{
+  "name": "softether-nodejsapi",
+  "version": "1.0.2",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "latest",
+    "csvjson": "^4.3.4",
+    "express": "latest",
+    "express-ipfilter": "latest",
+    "lodash": "^4.17.4"
+  }
+}
