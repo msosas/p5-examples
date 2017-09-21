@@ -5,28 +5,34 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js">//https://code.jquery.com/</script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 </head>
 <body>
-<div>
-	<h1 style="color: white">The Great Guessing <span id="color-display">RGB</span> Game</h1>
-</div>
-<div id="stripe">
-	<span id="message" style="color: white"></span>	
-	<button id="hard-button" class="selected" onclick="selectButton('hard')">HARD</button>
-	<button id="easy-button" onclick="selectButton('easy')">EASY</button>
-</div>
+	<div>
+		<h1 style="color: white">
+			<p>The Great</p> 
+			<p><span id="color-display"></span></p>
+			<p>Guessing Game</p>
+		</h1>
+	</div>
+	<div id="stripe">
+		<span id="message" style="color: white"></span>	
+		<button id="hard-button" class="selected" onclick="selectButton('hard')">HARD</button>
+		<button id="easy-button" onclick="selectButton('easy')">EASY</button>
+	</div>
 
-<div class="container">
-	<div class="square"></div>
-	<div class="square"></div>
-	<div class="square"></div>
-	<div class="square"></div>
-	<div class="square"></div>
-	<div class="square"></div>
-</div>
+	<div class="container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
 
 </body>
 <!-- JavaScript -->
-<script src="js/colors.js" type="text/javascript"></script>
+<script src="js/jq-colors.js" type="text/javascript"></script>
 </html>
