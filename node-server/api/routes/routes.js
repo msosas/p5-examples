@@ -4,4 +4,7 @@ module.exports = function(app) {
 	app.route('/hello')
 	.get(controller.hello);
 
+	app.route('/table')
+	.get(controller.table);
+
 };
