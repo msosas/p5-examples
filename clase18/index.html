@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Data Tables -->
+	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+	<script type="text/javascript" charset="utf8" src="http://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+
+	<title>AJAX Requests!</title>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron"></div>
+		<div id="static">
+			<p>Welcome to AJAX Requests</p>
+			<div><button class="btn btn-success" onclick="btnClick()">RUN</button></div><br>
+		</div>
+
+		<div id="table" style="border: 2px solid black">
+			<table id="example" class="display" cellspacing="0" width="100%">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Position</th>
+						<th>Office</th>
+						<th>Extn.</th>
+						<th>Start date</th>
+						<th>Salary</th>
+					</tr>
+				</thead>
+
+			</table>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+
+		$("#table").hide();
+		$.ajax({
+				method: "GET",
+				url: "http://localhost:3000/hello?name=matias",
+				success: function(data) {
+					$(".jumbotron").append("<div class='alert alert-success'><strong>" + data + "</strong></div>");
+				},
+				error: function(data) {
+					$(".jumbotron").append("<div class='alert alert-danger'><strong>ERROR:</strong> Could not reach node server</div>");
+				}
+			});
+
+
+			var tableRequest = {
+				method: "GET",
+				crossDomain: true,
+				url: "http://localhost:3000/table",
+				dataType: "json",
+				success: function(res){
+					$(document).ready(function() {
+						$('#example').DataTable( {
+							data: res,
+							columns: [
+							{ data: "id" },
+							{ data: "name" },
+							{ data: "position" },
+							{ data: "salary"}  ,
+							{ data: "start_date"},
+							]
+						} );
+					} );
+				}
+			};
+
+
+			
+
+	
+	function btnClick() {
+		$.ajax(tableRequest);
+		$("#table").show();	
+	}
+
+</script>
+</html>
