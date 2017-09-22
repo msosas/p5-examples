@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Channel!</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="weather.css">
+	<link rel="stylesheet" type="text/css" href="loading.css">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<h1>Clima Al Momento!</h1>
+		<div id="cities">
+			<button class="btn btn-default">San Miguel de Tucuman</button>
+			<button class="btn btn-default">Salta</button>
+			<button class="btn btn-default">Buenos Aires</button>
+			<button class="btn btn-default">Madrid</button>
+		</div>
+		<div id="loadingDiv" style="margin-top: 10%; margin-left: 45%">   
+			<div class="spinningCircle""></div>
+		</div>
+			<div id="weather-box">
+				<ul>
+					<li>Clima: <span id="weather"></span></li>
+					<li>Temperatura: <span id="temp"></span>ºC</li>
+					<li>Temperatura Minima: <span id="temp-min"></span>ºC</li>
+					<li>Temperatura Maxima: <span id="temp-max"></span>ºC</li>
+					<li>Humedad: <span id="humidity"></span>%</li>
+					<li>Visibilidad: <span id="visibility"></span>km</li>
+					<li>Puesta del sol: <span id="sunrise"></span></li>
+				</ul>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+
+
+			var city;
+
+			$("#weather-box").hide();
+			$("#loadingDiv").hide();
+
+			$("button").on('click', function (argument) {
+				$("#weather-box").hide();
+				$("#loadingDiv").show();
+				city = $(this).text();
+
+
+
+
+				var apiID = "95176c8edea30e33338e0eaddd53a916";
+
+				var settings = {
+					method: "GET",
+					crossDomain: true,
+					url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiID,
+					success: function(data){
+
+						var weather = data.weather[0].main;
+						var temp = Math.round((data.main.temp - 273));
+						var tempMin = Math.round(data.main.temp_min - 273);
+						var tempMax = Math.round(data.main.temp_max - 273);
+						var humidity = data.main.humidity;
+						var visibility = data.visibility / 1000;
+						var sunrise = Date(data.sys.sunrise);
+
+
+						if (weather == "Clouds") {
+							$("#weather").html("<i class='material-icons'>cloud<i>");	
+						}
+						if (weather == "Clear") {
+							$("#weather").html("<i class='material-icons'>wb_sunny</i>");
+						}
+						if (weather == "Rain") {
+							$("#weather").html("<i class='material-icons'>grain</i>");
+						}
+
+
+
+						$("#temp").html(temp);
+						$("#temp-min").html(tempMin);
+						$("#temp-max").html(tempMax);
+						$("#humidity").html(humidity);
+						$("#visibility").html(visibility);
+						$("#sunrise").html(sunrise);
+					}
+				};
+
+
+
+				$.ajax(settings)
+				.done(function (argument) {
+					$("#loadingDiv").hide();
+					$("#weather-box").show();
+				});
+
+			});
+		</script>
+
+	</body>
+	</html>

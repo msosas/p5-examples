@@ -1,0 +1,24 @@
+* {
+	box-sizing: border-box;
+	font-family: "Roboto Condensed";
+}
+
+body {
+	background-color: #eee;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	font-size: 20px;
+}
+
+i {
+	vertical-align: middle;
+}
+
+#weather-box {
+	border: 2px solid black;
+}
