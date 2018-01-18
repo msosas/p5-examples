@@ -1,20 +1,29 @@
-.empire-red {
-	background-color: red;
+.empire {
+  background-color: red;
 }
 
-.rebel-blue {
-	background-color: blue;
+.rebel {
+  background-color: blue;
+  color: white;
 }
 
 #darth-vader {
-	font-size: 30px;
+  font-size: 3em;
 }
 
-#luke {
-	font-style: italic;
+#luke-sky {
+  font-style: italic;
 }
 
 .soldier {
-	border: 2px dotted black;
-	letter-spacing: 2px;
+  border: 2px dashed orange;
+  letter-spacing: 1em;
+}
+
+.apoyo {
+  text-align: center;
+}
+
+.ship {
+  text-transform: uppercase;
 }

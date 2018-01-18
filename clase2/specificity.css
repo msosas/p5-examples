@@ -1,0 +1,25 @@
+.box {
+  border: 2px solid black;
+}
+
+p { /* negro */ 
+  color: black;
+}
+
+.text { /* rosa */
+  color: #F456AB;
+}
+
+#text-01 { /* marron */
+  color: #440;
+}
+
+
+/*
+
+[
+  {"keys": ["alt+shift+f"], "command": "reindent", "args": {"single_line": false}}
+]
+
+
+*/
