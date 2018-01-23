@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="form2.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Formulario</h1>
+		<form method="post" action="https://formspree.io/matiassosas@gmail.com">
+			<label for="user-id">Usuario</label>
+			<input id="user-id" placeholder="User" type="text" name="user"><br>
+			<label>Password <input placeholder="Password" type="password" name=""></label><br>
+			<label>
+				Correo
+				<input type="email" name="">
+			</label>
+			<br>
+			<textarea placeholder="comentario" cols="100"></textarea><br>
+			<label>
+				Gender
+				<h5>Male</h5>
+				<input type="radio" name="gender" value="male">
+				<h5>Female</h5>
+				<input type="radio" name="gender" value="female">
+			</label><br>
+			<select>
+				<option value="op1">opcion1</option>
+				<option value="op2">opcion2</option>
+				<option value="op3">opcion3</option>
+			</select>
+			<input type="checkbox" name="acept"><br>
+			<input type="submit" name=""><br>
+		</form>
+	</div>
+</body>
+</html>
