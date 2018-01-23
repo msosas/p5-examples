@@ -3,3 +3,7 @@
 	margin: 0 auto;
 	background-color: #F3F6A3
 }
+
+#submit {
+	position: fixed;
+}
