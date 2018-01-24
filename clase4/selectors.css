@@ -1,0 +1,63 @@
+body {
+	background-color: #326273;
+}
+
+h1 {
+	color: rgb(227,151,116);
+}
+
+h1:hover{
+	color: purple;
+}
+
+h2 {
+	color: #EEE;
+}
+
+li {
+	color: #AAA039;
+}
+
+#bordeado {
+	border: 2px solid red;
+}
+
+.aloha {
+	background-color: #BFAB25;
+}
+
+input {
+	border: 2px dashed lime;
+}
+
+div p {
+	font-size: 300%;
+}
+
+input[type="text"] {
+	background-color: #FFFA56;
+}
+
+a:visited {
+	color: #AAA039;
+}
+
+div:nth-of-type(3)>p {
+	background-color: blue;
+}
+
+div:nth-of-type(3) span {
+	background-color: white;
+}
+
+input[type="checkbox"]:checked {
+	margin-left: 60px;
+}
+
+label {
+	text-transform: uppercase;
+}
+
+#ultimo:first-letter {
+	font-size: 400%;
+}

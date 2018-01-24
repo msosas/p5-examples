@@ -1,0 +1,30 @@
+#container {
+	max-width: 900px;
+	margin: 0 auto;
+	background-color: #B76C00;
+	text-align: center;
+}
+
+input {
+	margin: 2px;
+}
+
+#container:hover {
+	background-color: green;
+}
+
+#user-label:focus {
+	font-family: 'Indie Flower';	
+}
+
+#submit-button:active {
+	font-size: 50px;
+}
+
+#conditions:checked {
+
+}
+
+input[type="checkbox"]:checked {
+	margin: 90px;
+}

@@ -1,0 +1,37 @@
+div {
+	height: 200px;
+	border: 2px solid red;
+}
+
+#box-01 {
+	background-color: grey;
+	position: static;
+}
+
+#box-02 {
+	background-color: orange;
+	position: relative;
+	top: 50px;
+	left: 100px;
+}
+
+#box-03 {
+	background-color: lime;
+	position: fixed;
+}
+
+#box-04 {
+	background-color: purple;
+	position: relative;
+	top: 50px;
+	left: 100px;
+}
+
+#box-05 {
+	background-color: yellow;
+	width: 25%;
+	height: 25%;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
