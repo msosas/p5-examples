@@ -1,0 +1,8 @@
+.col-lg-6 {
+  background-color: grey;
+  border: 1px solid black;
+}
+.col-lg-4 {
+  background-color: red;
+  border: 1px solid black;
+}
