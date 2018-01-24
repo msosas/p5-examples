@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--JQUERY -->
+	<script src="jquery-3.3.1.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Hackaton</title>
+</head>
+<body>
+	<div>
+	  <!-- NavBar -->
+	  <nav class="navbar navbar-default" id="navbar">
+	    <div class="container-fluid">
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-items">
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>                        
+	        </button>
+	        <a class="navbar-brand" href="#">Webstore Hackaton</a>
+	      </div>
+	      <div class="collapse navbar-collapse" id="navbar-items">
+	        <ul class="nav navbar-nav">
+	          <li class="dropdown">
+	            <a class="dropdown-toggle" data-toggle="dropdown" role="button" ariahaspopup="true" aria-expanded="false" href="#">
+	              Productos
+	              <span class="caret"></span>
+	            </a>
+	            <ul class="dropdown-menu">
+	              <li><a href="#">Discos</a></li>
+	              <li><a href="#">Libros</a></li>
+	            </ul>
+	          </li>
+	        </ul>
+	      
+	        <form class="navbar-form navbar-left">
+	          <div class="form-group">
+	            <input class="form-control" type="text" placeholder="Search" name="">
+	          </div>
+	          <button class="btn btn-default" type="submit">Submit</button>
+	        </form>
+	      
+	        <ul class="nav navbar-nav navbar-right">
+	          <li><a href="">Ver Todo</a></li>
+	          <li class="active"><a href="">Agregar Productos</a></li>
+	        </ul>
+	        
+	      </div>
+	    </div>
+	  </nav>
+
+	  <div id="add-product">
+		  <form>
+		  	<div class="form-group">
+		  	  <label for="sel1">Agregar Producto</label>
+		  	    <select class="form-control" id="sel1">
+		  	      <option>Libros</option>
+		  	      <option>Discos</option>		  	     
+		  	    </select>
+		  	</div>
+		    <div class="form-group">
+		      <label for="exampleInputEmail1">Titulo</label>
+		      <input type="text" class="form-control" id="exampleInputEmail1">
+		    </div>
+		    <div class="form-group">
+		      <label for="exampleInputEmail1">Categoria</label>
+		      <input type="text" class="form-control" id="exampleInputEmail1">
+		    </div>
+		    <div class="form-group">
+		      <label for="exampleInputEmail1">Precio</label>
+		      <input type="text" class="form-control" id="exampleInputEmail1">
+		    </div>
+			<div class="form-group">
+		      <label for="exampleInputEmail1">Punto de Venta</label>
+		      <input type="text" class="form-control" id="exampleInputEmail1">
+		    </div>
+		    <div class="form-group">
+		      <label for="exampleInputEmail1">Imagen url</label>
+		      <input type="text" class="form-control" id="exampleInputEmail1">
+		    </div>
+
+		    <button type="submit" class="btn btn-primary">Publicar!</button>
+		  </form>
+	  </div>
+	</div>
+</body>
+</html>
