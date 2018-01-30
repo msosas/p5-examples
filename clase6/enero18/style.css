@@ -29,4 +29,18 @@ p {
 #add-product {
 	max-width: 500px;
 	margin: auto;
+	margin-bottom: 30%;
+}
+
+footer {
+	color: #FAFAFA;
+	height: 20px;
+	background-color: black;
+	text-align: center;
+}
+
+img	{
+	border: 1px solid #DDD;
+	padding: 4px;
+	border-radius: 4px;
 }
