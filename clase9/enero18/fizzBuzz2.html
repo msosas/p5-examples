@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>La Venganza de Fizz Buzzz</title>
+</head>
+<body>
+<script type="text/javascript">
+  function fizzBuzz2(a, b, contar_hasta, fizz_num, buzz_num) {
+    var text = '';
+    fizz_num = 3;
+    buzz_num = 5;
+    for (var i = 1; i <= contar_hasta; i++) {
+      if (i % fizz_numm === 0 && i % buzz_num === 0) {
+        console.log(a + b);
+        text = text + a + b + ', ';
+      }
+      else {
+        if (i%buzz_num===0) {
+          console.log(b);
+          text = text + b + ', ';
+        }
+        else if(i%fizz_num===0) {
+          console.log(a);
+          text = text + a + ', ';
+        }
+        else {
+          console.log(i);
+          text = text + i + ', '
+        }
+      }
+    }
+    return text;
+  }
+
+  var st = fizzBuzz2('napo', 'cafe');
+</script>
+</body>
+</html>

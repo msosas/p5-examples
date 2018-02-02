@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fibonacci</title>
+</head>
+<body>
+<script type="text/javascript">
+  function fibo() {
+    a = 0;
+    b = 1;
+    c = 1;
+    for (var i = 0; i < 100; i++) {
+      console.log(a);
+      a = b;
+      b = c;
+      c = a + b;
+    }
+  }
+  fibo();
+</script>
+</body>
+</html>
