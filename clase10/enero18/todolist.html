@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The To Do List</title>
+</head>
+<body>
+<script type="text/javascript">
+  var list = ['fotocopias', 'medico', 'banco'];
+  
+
+
+  function addItem(item) {
+    list.push(item);
+  }
+
+  function getList() {
+    list.forEach(function(item, index){
+      console.log(index + ": " + item);
+    })
+  }
+
+  function deleteItem(item) {
+    var copyOfList = [];
+    if(list.indexOf(item) === -1) {
+      console.log("El elemento no se encuentra");
+    }
+    else {
+      list.forEach(function(i) {
+        if (i !== item) {
+          copyOfList.push(i);
+          console.log(i)
+        }
+      })
+      list = copyOfList;
+      console.log(list)
+    }
+  }
+
+  var input = prompt("Ingrese una opcion (new/list/delete/quit): ");
+  
+  while(input !== 'quit') {
+    switch(input) {
+      case 'new':
+        addItem(prompt("Agregar nuevo item"));
+        break;
+      case 'list':
+        getList();
+        break;
+      case 'delete':
+        deleteItem(prompt("Qué item desea eliminar?"));
+        break;
+    }
+    input = prompt("Ingrese una opcion (new/list/delete/quit): ");
+  }
+  console.log("La aplicación se ha cerrado....")
+</script>
+</body>
+</html>
