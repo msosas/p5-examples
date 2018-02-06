@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Poema Desordenado</title>
+</head>
+<body>
+<script type="text/javascript">
+	var poemaDesordenado = "roses red are bacon crispy i bacon love and is blue violets are";
+	var arregloDesordenado = poemaDesordenado.split(' ');
+
+	var arregloOrdenado = [];
+
+	while(arregloDesordenado.length > 0) {
+		arregloOrdenado.push(arregloDesordenado.shift());
+		arregloOrdenado.push(arregloDesordenado.pop());
+	}
+
+	console.log(arregloOrdenado);
+
+	//var poema = arregloOrdenado.join();
+	//var poema = arregloOrdenado.toString();
+	console.log(poema);
+</script>
+</body>
+</html>

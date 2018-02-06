@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Supermercado</title>
+</head>
+<body>
+<script type="text/javascript">
+	var listaDeSuper = ['arroz','detergenete','carne','pan'];
+
+	console.log(listaDeSuper[0]);
+
+	var ultimoElemento = listaDeSuper.length - 1;
+	console.log(listaDeSuper[ultimoElemento]);
+
+	console.log('-------- Push / Pop -----------------------');
+
+	listaDeSuper.push('aceite');
+
+	console.log(listaDeSuper);
+
+	var item = listaDeSuper.pop(); //tambien devuelve el elemento eliminado
+	console.log('Elemento eliminado: ' + item);
+	console.log(listaDeSuper);
+
+	console.log('---------- Shift / Unshift ----------------');
+
+	listaDeSuper.unshift('cereales');
+	console.log(listaDeSuper);
+	listaDeSuper.shift();
+
+	console.log(listaDeSuper);
+
+	console.log('---------- Slice / Splice ----------------');
+
+	var colores = ['rojo', 'amarillo', 'azul'];
+	var copia = colores.slice(1,3);
+	console.log(copia);
+
+	copia.splice(1);
+	console.log(copia);
+
+</script>
+</body>
+</html>
