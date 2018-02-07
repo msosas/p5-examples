@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Politicos</title>
+</head>
+<body>
+<script type="text/javascript">
+  var favorites = []
+
+  var famous = ['alex smith', 'amy whinehouse', 'cameron diaz', 'brad pitt',
+      'ashton kutcher', 'mark whalberg', 'morgan freeman', 'mila kunis']
+
+
+  var obama_jobs = []
+
+  var politicos = {
+      secretary_of_state: 'hillary clinton',
+      potus: 'barack obama',
+      flotus: 'michelle obama',
+      vice_prez: 'joe biden',
+      gov_of_california: 'jerry brown'
+  }
+  
+  famous.forEach(function(item) {
+    if(item[0] === 'a') {
+      favorites.push(item);
+    }
+  })  
+  var b_named_politicos = {};
+  for(key in politicos) {
+    famous.push(politicos[key]);
+    obama_jobs.push(key);
+    if (politicos[key][0] === 'b' || politicos[key][politicos[key].indexOf(' ') + 1] === 'b') {
+      b_named_politicos[key] = politicos[key];
+    }
+  }
+  console.log(obama_jobs);
+</script>
+</body>
+</html>

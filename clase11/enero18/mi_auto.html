@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Auto</title>
+</head>
+<body>
+<script type="text/javascript">
+  var mi_auto = {};
+  mi_auto.marca = 'Fiat';
+  mi_auto.anio = 2018;
+  mi_auto.nuevo = true;
+
+  var property_key = 'modelo'
+
+  mi_auto[property_key] = 'Argo HGT';
+
+  var another_property_key = 'precio';
+
+  mi_auto[another_property_key] = 382000;
+
+
+  for(key in mi_auto) {
+    console.log(key + ': ' + mi_auto[key]);
+  }
+</script>
+</body>
+</html>
