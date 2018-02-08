@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var listaDeSuper = [];
+
+	listaDeSuper[0] = 'sal';
+	listaDeSuper[1] = 'azucar';
+	listaDeSuper[2] = 'fideos';
+	listaDeSuper[3] = 'cafe';
+
+	var ultimoElemento = listaDeSuper.length;
+	console.log(listaDeSuper[ultimoElemento - 1]);
+
+	listaDeSuper.push('arroz');
+
+	listaDeSuper.pop();
+
+	listaDeSuper.unshift('arroz');
+	listaDeSuper.shift();
+	console.log(listaDeSuper);
+
+
+	var func = function(i) {
+		console.log(i)
+	}
+
+	listaDeSuper.forEach(func)
+	
+</script>
+</body>
+</html>
