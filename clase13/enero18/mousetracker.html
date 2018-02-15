@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../../bootstrap.min.css">
+  <title>Tracker</title>
+  <style type="text/css">
+    body {
+      height: 100vh;
+    }
+    img {
+      position: fixed;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <img src="https://media.giphy.com/media/MtQxKzhytFsmQ/giphy.gif">
+</div>
+<script type="text/javascript">
+  var $body = document.querySelector('body');
+
+  $body.addEventListener('mousemove', function(event) {
+    var $img = document.querySelector('img');
+    $img.style.top = event.clientY.toString() + 'px';
+    $img.style.left = event.clientX.toString() + 'px';
+  })
+</script>
+</body>
+</html>
