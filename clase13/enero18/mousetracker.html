@@ -6,6 +6,7 @@
   <style type="text/css">
     body {
       height: 100vh;
+      cursor: none;
     }
     img {
       position: fixed;
@@ -21,8 +22,11 @@
 
   $body.addEventListener('mousemove', function(event) {
     var $img = document.querySelector('img');
-    $img.style.top = event.clientY.toString() + 'px';
-    $img.style.left = event.clientX.toString() + 'px';
+    if (event.which) {
+      $img.style.top = event.clientY.toString() + 'px';
+      $img.style.left = event.clientX.toString() + 'px';  
+    }
+    
   })
 </script>
 </body>
