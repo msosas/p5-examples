@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #232323;
+}
+
+p {
+  margin: 0 auto;
+}
+
+button {
+  font-family: "Montserrat", "Avenir";
+  background-color: #fafafa;
+  color: steelblue;
+  border: none;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 700;
+  outline: none;
+}
+
+button:hover {
+  background-color: steelblue;
+  color: #fafafa;
+}
+.container {
+  max-width: 600px;
+}
+
+.square {
+  float: left;
+  width: 30%;
+  height: 30%;
+  background-color: black;
+  margin: 1.66%;
+  padding-bottom: 30%;
+  border-radius: 10px;
+}
+
+#title01, #message {
+  color: #fafafa;
+}
+
+#message {
+  display: inline-block;
+  width: 20%;
+  color: steelblue;
+}
+
+#color-display {
+  font-size: 2.6em;
+}
+
+#title01 {
+  text-align: center;
+  background-color: steelblue;
+  font-family: "Montserrat", "Avenir";
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+#title01 h1 {
+  font-size: 2.5em;
+  margin: 0 auto;
+}
+
+#stripe {
+  background-color: #fafafa;
+  color: steelblue;
+  margin: 0 auto;
+  text-align: center;
+  font-size: x-large;
+  height: 30px;
+}
+
+.selected {
+  background-color: steelblue;
+  color: #fafafa;
+}
+
+.hide-square {
+  opacity: 0;
+  transition: 1s;
+}
