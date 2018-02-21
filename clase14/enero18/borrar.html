@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Beeper</title>
+	<link rel="stylesheet" type="text/css" href="../../bootstrap.min.css">
+	<style type="text/css">
+		.fondo {
+			background-color: #F3A587;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<ul class="list-group">
+		<li class="list-group-item">Skol</li>
+		<li class="list-group-item">Leffe</li>
+		<li class="list-group-item">Patagonia</li>
+		<li class="list-group-item">Quilmes</li>
+	</ul>
+	<button>PRESS</button>
+</div>
+
+<script type="text/javascript">
+	var $li = document.querySelector('button');
+	var x ;
+	$li.addEventListener('click', function() {
+		x = 3
+		console.log(x);
+	})
+	
+</script>
+</body>
+</html>

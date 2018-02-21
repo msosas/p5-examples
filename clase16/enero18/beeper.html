@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../../bootstrap.min.css">
+  <script type="text/javascript" src='../../clase16/enero18/jquery-3.3.1.min.js'></script>
+  <style type="text/css">
+    .bg {
+      background-color: #F3AA17;
+    }
+  </style>
+  <title>Beeper</title>
+</head>
+<body>
+<div class="container">
+  <button class="btn btn-info">
+    BEEP
+  </button>
+</div>
+
+<script type="text/javascript">
+  var $button = document.querySelector('.container button');
+
+  function boton() {
+    $('body').prepend('<p>BEEP</p>');
+
+    document.querySelector('body').classList.toggle('bg');
+  }
+
+  
+</script>
+</body>
+</html>

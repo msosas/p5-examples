@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>On click</title>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div id="div01">
+	<ul>
+		<li>item1</li>
+		<li>item2</li>
+		<li>item3</li>
+		<li>item4</li>
+	</ul>
+</div>
+<div id="div02">
+	<ul></ul>
+</div>
+<script type="text/javascript">
+	var $ul = document.querySelector('#div02>ul');
+
+	
+
+	$ul.innerHTML='<li>item5<li>'
+
+	$('#div02>ul>li').click(function() {
+		alert('click!');
+	});
+	$('#div02>ul').on('click','li', function() {
+		console.log('click!!');
+	})
+</script>
+</body>
+</html>

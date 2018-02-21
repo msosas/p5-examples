@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creando!</title>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	var $div = $('<div id="container">')
+	$('body').append($div);
+
+	var $img = $('<img src="https://media.gettyimages.com/photos/super-macro-insect-photographed-by-usman-priyono-on-april-25-2016-in-picture-id524861774?k=6&m=524861774&s=612x612&w=0&h=_9Vr1_q1qAARs5_Db5Au8a1LdIODyiS1PfwrFLHp97M=">')
+
+	$('#container').html($img);
+
+	$('img').css('width', '12px');
+
+	$('img').css('position', 'fixed');
+
+	$('img').css({
+		top: Math.random()*300,
+		left: Math.random()*300
+	})
+</script>
+</body>
+</html>
