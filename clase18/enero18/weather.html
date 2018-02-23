@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Channel</title>
+  <link rel="stylesheet" type="text/css" href="../../bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">0
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>The Weather Channel</h1>
+
+  <div id="menu">
+    <button id="tucuman" class="btn btn-default">Tucuman</button>
+    <button id="bsas" class="btn btn-default">Buenos Aires</button>
+    <button id="lima" class="btn btn-default">Lima</button>
+  </div>
+  <hr>
+
+  <div id="weather-data">
+    <div class="spinning-circle"></div>
+    <ul>
+      <li id="picture"><img src=></li>
+      <li>Clima:<span id="weather"></span></li>
+      <li>Temperatura:<span id="temp"></span></li>
+      <li>Temp Min:<span id="t-min"></span></li>
+      <li>Temp Max:<span id="t-max"></span></li>
+      <li>Humedad: <span id="hum"></span></li>
+      <li>Puesta del Sol:<span id="sunset"></span></li>
+    </ul>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $('#weather-data ul').hide();
+  $('.spinning-circle').hide();
+  
+  var APPID = '95176c8edea30e33338e0eaddd53a916';
+
+  $('.btn.btn-default').on('click', function() {
+    $('.spinning-circle').show();  
+    var city = $(this).text()
+    var url =  'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + APPID;
+
+    var connection = {
+      method: 'GET',
+      url: url,
+      error: function(err) {
+        console.log(err);
+      }
+    };
+
+    $.ajax(connection).done(function(data) {
+      $('#weather').text(data.weather[0].main);
+      $('#temp').text(Math.round(data.main.temp)-273 + 'º');
+      $('#t-min').text(Math.round(data.main.temp_min)-273 + 'º')
+      $('#t-max').text(Math.round(data.main.temp_max)-273 + 'º')  
+      $('#hum').text(data.main.humidity + '%')
+      var date = new Date(data.sys.sunset * 1000)
+      $('#sunset').text(date.getHours() + ':' + date.getMinutes() + 'PM')
+
+      switch(data.weather[0].main) {
+        case 'Clear': {
+          $('#picture img').attr('src', 'img/clear.png')
+        }
+      }
+      $('.spinning-circle').hide();
+      $('#weather-data ul').show();
+    })
+  
+  })
+  
+
+</script>
+</body>
+</html>
