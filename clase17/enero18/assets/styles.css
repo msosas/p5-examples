@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Shadows Into Light';
+}
+
+body {
+	background-color: #BEBEBE;
+}
+
+.list-group-item {
+	background-color: #FFF481;
+	cursor: pointer;
+}
+
+.container {
+	max-width: 500px;
+	text-align: center;
+	border: 2px solid black;
+	box-shadow: 6px 6px 30px 15px;
+	background-color: #FFF054;
+	margin-top: 7%;
+}
+
+.checked {
+	text-decoration: line-through;
+	color: grey;	
+}
+
+li .material-icons {
+	float: right;
+}
+
+#pin {
+	max-width: 10%;
+	float: right;
+}

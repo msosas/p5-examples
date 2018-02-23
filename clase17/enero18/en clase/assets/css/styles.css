@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Amatic SC';
+	font-size: 1.1em;
+}
+
+#title {
+	font-size: 2.5em;
+}
+
+body {
+	background-color: #BEBEBE;
+}
+
+
+#pin {
+	width: 15%;
+	float: right;
+}
+.container {
+	max-width: 500px;
+	margin: auto;
+	border: 2px solid black;
+	background-color: #FFF054;
+	text-align: center;
+}
+
+.list-group-item {
+	cursor: pointer;
+}
+
+.material-icons{
+	float: right;
+}
+
+#pending-items {
+	list-style-type: none;
+}
+
+.checked {
+	color: grey;
+	text-decoration: line-through;
+}
+
